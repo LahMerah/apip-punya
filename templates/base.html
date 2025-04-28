@@ -1,0 +1,27 @@
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DATABASE DIRI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DATABASE DIRI</h1>
+            <nav class="menu" role="navigation" aria-label="Main Navigation">
+                <a href="/" aria-current="{% if request.path == '/' %}page{% endif %}">Home</a>
+                <a href="/about" aria-current="{% if request.path == '/about' %}page{% endif %}">About</a>
+                <a href="/projects" aria-current="{% if request.path == '/projects' %}page{% endif %}">Projects</a>
+                <a href="/contact" aria-current="{% if request.path == '/contact' %}page{% endif %}">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+    <footer class="footer">
+        &copy; 2024 Ahmad Afif Valino. All rights reserved.
+    </footer>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>DATABASE DIRI</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">

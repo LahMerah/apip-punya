@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="projects-section">
+    <h2>My Projects</h2>
+
+    <div class="project-number">
+        <p>1. Project NPM Tag</p>
+        <div class="gallery">
+            <img src="{{ url_for('static', filename='gambar/coding.jpeg') }}" alt="Coding" />
+        </div>
+    </div>
+
+    <div class="project-number">
+        <p>2. Project Arduino</p>
+        <div class="gallery">
+            <img src="{{ url_for('static', filename='gambar/elektronika.jpeg') }}" alt="Elektronika" />
+        </div>
+    </div>
+
+    <div class="project-number">
+        <p>3. Project OKK</p>
+        <div class="gallery">
+            <img src="{{ url_for('static', filename='gambar/TE.jpeg') }}" alt="TE" />
+        </div>
+    </div>
+</section>
+{% endblock %}
